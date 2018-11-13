@@ -1,0 +1,96 @@
+html,
+body {
+	background: #fff;
+}
+
+.circleWraper {
+
+	padding: 10px;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	border-bottom: 1px solid #8f8f94;
+}
+
+.circle {
+	width: 80px;
+	height: 80px;
+	text-align: center;
+	line-height: 80px;
+	border: 1px solid #333;
+	border-radius: 50%;
+
+}
+
+.left {
+	border-right: 1px solid #8f8f94;
+	text-align: center;
+	height: 40px;
+	width: 100px;
+}
+
+.left p {
+	margin-bottom: 0;
+}
+
+.mui-content {
+	background: #fff;
+}
+
+.messageWrap,
+.activeClass {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	border-bottom: 1px solid #8f8f94;
+}
+
+.activeChild {
+	text-align: center;
+	padding: 10px;
+
+}
+
+.activeChild p {
+	margin-bottom: 0;
+}
+
+.messageWrap ul {
+	margin-right: 180px;
+}
+
+.mui-row li {
+	list-style: none;
+}
+
+.trip {
+	width: 2px;
+	height: 51px;
+	background: #8f8f94;
+	position: relative;
+	top: 11px;
+}
+
+.trip2 {
+	width: 2px;
+	height: 51px;
+	background: #8f8f94;
+	position: relative;
+	top: 1px;
+}
+
+.titleText {
+	height: 40px;
+	line-height: 40px;
+	border-bottom: 1px solid #8f8f94;
+	text-align: center;
+}
+
+.footerText {
+	display: flex;
+	justify-content: space-between;
+}
+
+.footerWrap {
+	padding: 10px;
+}

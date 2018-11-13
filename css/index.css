@@ -1,0 +1,4 @@
+/* Tab选中时颜色 */
+.mui-bar-tab .mui-tab-item.mui-active {
+	color: #FF3030;
+}

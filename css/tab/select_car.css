@@ -1,0 +1,31 @@
+.line-top {
+	margin-top: 10px;
+}
+
+.btn-radius {
+	border-radius: 5px;
+}
+
+.btn_search_all {
+	width: 90%;
+	height: 40px;
+	margin-top: 10px;
+	color: #e13a3b;
+	margin-bottom: 10px;
+}
+
+.devide-line {
+	height: 1px;
+	border-top: 1px solid #ddd;
+	text-align: center;
+	margin-bottom: 15px;
+}
+
+.hotcar-pic {
+	height: 60px;
+	margin-left: 5px;
+}
+
+.white-bg {
+	background: white;
+}

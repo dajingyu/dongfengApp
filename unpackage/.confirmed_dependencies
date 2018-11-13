@@ -1,0 +1,28 @@
+{
+  "index.html": {
+    "resources": [
+      "page/mainsub/tab_main.html"
+    ],
+    "refer": [
+      "guide.html",
+      "page/mainsub/tab_main.html",
+      "page/mainsub/tab_myself.html",
+      "page/mainsub/tab_select_car.html",
+      "page/mainsub/tab_service.html"
+    ]
+  },
+  "page/mainsub/tab_myself.html": {
+    "refer": [
+      "page/login/login.html"
+    ]
+  },
+  "page/login/login.html": {
+    "resources": [
+      "page/login/phone_login.html"
+    ],
+    "refer": [
+      "page/login/phone_login.html",
+      "page/login/password_login.html"
+    ]
+  }
+}

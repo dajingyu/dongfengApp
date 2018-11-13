@@ -1,0 +1,22 @@
+ul.mui-table-view {
+    margin-top: 15px;
+}
+
+.mui-table-view-cell span.message {
+	float: right;
+	color: #AAAAAA;
+	font-size: 12px;
+	line-height: 24px;
+	height: 24px;
+}
+
+div.setting {
+	position: absolute;
+	left: 10px;
+	right: 10px;
+	bottom: 8px;
+}
+
+button.mui-btn.setting {
+	padding: 8px 0;
+}

@@ -1,0 +1,43 @@
+/* 意见反馈文本样式 */
+span.feedback {
+	display: block;
+	padding: 10px 14px;
+	font-size: 14px;
+	color: #AAAAAA;
+	border-bottom: solid 1px #CCCCCC;
+}
+
+/* 意见反馈图标颜色 */
+.mui-table-view-cell span.mui-icon {
+	color:#AAAAAA;
+}
+
+/* 意见反馈文本输入框样式 */
+textarea {
+	width: 100%;
+	height: 150px;
+}
+
+/* 意见反馈文本输入框提示文本样式 */
+textarea::-webkit-input-placeholder {
+	font-size: 14px;
+	color:#AAAAAA;
+}
+
+/* 意见反馈其他项输入框样式 */
+input[type=text].feedback {
+	width: 80%;
+	height: 20px;
+	padding: 0;
+}
+
+/* 意见反馈其他项输入框提示文本样式 */
+input[type=text]::-webkit-input-placeholder {
+	font-size: 14px;
+	color:#AAAAAA;
+}
+
+/* 底部意见反馈按钮样式 */
+div.feedback {
+	margin: 20px 10px;
+}

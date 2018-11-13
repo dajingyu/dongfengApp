@@ -1,0 +1,179 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="../../css/mui.css" rel="stylesheet" />
+		<link href="../../css/tab/select_car.css" rel="stylesheet" />
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav">
+			<div class="mui-input-row mui-search">
+				<input type="search" class="mui-input-clear" placeholder="请输入品牌或车型">
+			</div>
+		</header>
+
+		<div id="pull_refresh" class="mui-content mui-scroll-wrapper white-bg" style="margin-top: 15px;">
+			<div class="mui-scroll">
+				<div class="mui-row mui-text-center">
+					<div class="mui-col-sm-4">
+						<img src="../../images/car/logo-honda.jpeg" height="60px" width="80px">
+						<p>东风本田</p>
+					</div>
+					<div class="mui-col-sm-4">
+						<img src="../../images/car/logo-dongfeng.jpeg" height="60px" width="60px">
+						<p>东风风神</p>
+					</div>
+					<div class="mui-col-sm-4">
+						<img src="../../images/car/logo-kia.jpeg" height="60px" width="60px">
+						<p>东风悦达起亚</p>
+					</div>
+				</div>
+				<div class="mui-row mui-text-center">
+					<div class="mui-col-sm-4">
+						<img src="../../images/car/logo-dongfeng.jpeg" height="60px" width="60px">
+						<p>东风风行</p>
+					</div>
+					<div class="mui-col-sm-4">
+						<img src="../../images/car/logo-dongfeng.jpeg" height="60px" width="60px">
+						<p>东风裕隆</p>
+					</div>
+					<div class="mui-col-sm-4">
+						<img src="../../images/car/logo-dongfeng.jpeg" height="60px" width="60px">
+						<p>东风小康</p>
+					</div>
+				</div>
+
+				<div class="mui-text-center line-top" style="font-size: 14px; color: #8F8F94;">
+					<div class="mui-row line-top">
+						<div class="mui-col-sm-2">车价</div>
+						<div class="mui-col-sm-3">3万以下</div>
+						<div class="mui-col-sm-2">3-5万</div>
+						<div class="mui-col-sm-2">5-8万</div>
+						<div class="mui-col-sm-3">8-10万</div>
+					</div>
+					<div class="mui-row line-top">
+						<div class="mui-col-sm-2">首付</div>
+						<div class="mui-col-sm-3">0首付</div>
+						<div class="mui-col-sm-2">3万以下</div>
+						<div class="mui-col-sm-2">3-5万</div>
+						<div class="mui-col-sm-3">5-8万</div>
+
+					</div>
+					<div class="mui-row line-top">
+						<div class="mui-col-sm-2">月供</div>
+						<div class="mui-col-sm-3">1千以下</div>
+						<div class="mui-col-sm-2">1-3千</div>
+						<div class="mui-col-sm-2">3-5千</div>
+						<div class="mui-col-sm-3">5-8千</div>
+					</div>
+					<div class="mui-row line-top">
+						<div class="mui-col-sm-2">级别</div>
+						<div class="mui-col-sm-3">紧凑车型</div>
+						<div class="mui-col-sm-2">小型车</div>
+						<div class="mui-col-sm-2">中型车</div>
+						<div class="mui-col-sm-3">SUV</div>
+					</div>
+					<button type="button" class="btn_search_all">查看全部</button>
+				</div>
+
+				<!-- 分隔线 -->
+				<div class="devide-line"></div>
+
+				<div class="mui-text-center">
+					<p style="font-size: 18px; color: #000000;">热销车型</p>
+
+					<div class="mui-row">
+						<div class="mui-col-sm-4">
+							<img src="../../images/car/ad-01.jpg" width="90%">
+						</div>
+						<div class="mui-col-sm-4">
+							<img src="../../images/car/ad-02.jpg" width="90%">
+						</div>
+						<div class="mui-col-sm-4">
+							<img src="../../images/car/ad-03.jpg" width="90%">
+						</div>
+					</div>
+				</div>
+
+				<div id="category_btn" style="margin: 10px;">
+					<button type="button" class="mui-btn mui-btn-danger mui-btn-outlined btn-radius" data-href='1111'>全部</button>
+					<button type="button" class="mui-btn btn-radius">SUV</button>
+					<button type="button" class="mui-btn btn-radius">紧凑型车</button>
+					<button type="button" class="mui-btn btn-radius">中大型车</button>
+				</div>
+
+				<ul class="mui-table-view">
+					<li class="mui-table-view-cell">
+						<div class="mui-row">
+							<div class="mui-col-sm-6 mui-pull-left">
+								<div>
+									<img src="../../images/car/cell-car-1.jpg" class="mui-pull-left hotcar-pic">
+									<div class="mui-pull-left" style="margin-left: 5px; margin-top: 10px;">
+										<p style="color: #333;">风光580</p>
+										<p style="color: #e13a3b;">月供2430*24期</p>
+									</div>
+								</div>
+							</div>
+							<div class="mui-col-sm-6">
+								<img src="../../images/car/cell-car-2.jpg" class="mui-pull-left hotcar-pic">
+								<div style="float: left; margin-left: 5px; margin-top: 10px;">
+									<p style="color: #333;">哥瑞</p>
+									<p style="color: #e13a3b;">月供1662*24期</p>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li class="mui-table-view-cell">
+						<div class="mui-row">
+							<div class="mui-col-sm-6 mui-pull-left">
+								<div>
+									<img src="../../images/car/cell-car-3.jpg" class="mui-pull-left hotcar-pic">
+									<div class="mui-pull-left" style="margin-left: 5px; margin-top: 10px;">
+										<p style="color: #333;">景逸X5</p>
+										<p style="color: #e13a3b;">月供1977*24期</p>
+									</div>
+								</div>
+							</div>
+							<div class="mui-col-sm-6">
+								<img src="../../images/car/cell-car-4.jpg" class="mui-pull-left hotcar-pic">
+								<div style="float: left; margin-left: 5px; margin-top: 10px;">
+									<p style="color: #333;">起亚K3</p>
+									<p style="color: #e13a3b;">月供2218*36期</p>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li class="mui-table-view-cell">
+						<div class="mui-row">
+							<div class="mui-col-sm-6 mui-pull-left">
+								<div>
+									<img src="../../images/car/cell-car-5.jpg" class="mui-pull-left hotcar-pic">
+									<div class="mui-pull-left" style="margin-left: 5px; margin-top: 10px;">
+										<p style="color: #333;">CR-V</p>
+										<p style="color: #e13a3b;">首付低至3.4万</p>
+									</div>
+								</div>
+							</div>
+							<div class="mui-col-sm-6">
+								<img src="../../images/car/cell-car-6.jpg" class="mui-pull-left hotcar-pic">
+								<div style="float: left; margin-left: 5px; margin-top: 10px;">
+									<p style="color: #333;">东风风神AX7</p>
+									<p style="color: #e13a3b;">首付低至2.79万</p>
+								</div>
+							</div>
+						</div>
+					</li>
+
+				</ul>
+			</div>
+		</div>
+
+		<script src="../../js/mui.js"></script>
+		<script src="../../js/tab/select_car.js"></script>
+	</body>
+
+</html>

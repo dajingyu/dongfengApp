@@ -1,0 +1,26 @@
+/* 图标颜色 */
+.mui-table-view-cell span.mui-icon {
+	color:red;
+}
+
+/* 选项文本样式 */
+.mui-table-view-cell span.mui-icon span{
+	color:black;
+	font-size: 16px;
+	margin-left: 10px;
+	font-style: normal;
+}
+
+/* 客服电话文本样式 */
+.mui-table-view-cell span.phone {
+	float: right;
+	color: #AAAAAA;
+	font-size: 12px;
+	line-height: 24px;
+	height: 24px;
+}
+
+/* 选项之间间距 */
+ul.mui-table-view {
+	margin-top: 15px;
+}

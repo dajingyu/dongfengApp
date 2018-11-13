@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="../../css/mui.css" rel="stylesheet" />
+	</head>
+	<style type="text/css">
+		.mui-bar-nav~.mui-content .mui-pull-top-pocket {
+			top: 0px !important;
+		}
+	</style>
+	<script src="../../js/mui.js" type="text/javascript" charset="utf-8"></script>
+	<body>
+		<header class="mui-bar mui-bar-nav mui-bar-transparent">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+			<h1 class="mui-title">全部资讯</h1>
+		</header>
+
+		<div class="mui-content" style="top: 44px;" id="navListADom">
+			<div class="wrap-search" @tap="enterSearch">
+				<span class="mui-icon mui-icon-search" style="line-height: 30px;color: #AAAAAA;font-size: 16px;"></span>
+				<span style="line-height: 30px;color: #AAAAAA;font-size: 14px;">电影/电视剧/影人</span>
+			</div>
+
+			<!-- <div class="wrap-search" @tap="enterSearch">
+				<input type="search" class="mui-input-clear" placeholder="">
+			</div> -->
+
+			<!--下拉刷新容器-->
+			<div id="refreshContainer" class=" mui-scroll-wrapper" style="top: 94px;">
+				<div class="mui-scroll">
+					<ul class="mui-table-view" >
+						<li class="mui-table-view-cell mui-media" v-for="item in navList" @tap="open_detail(item)">
+							<a href="javascript:;">
+								<img class="mui-media-object mui-pull-right" :src="item.img">
+								<div class="mui-media-body">
+									{{item.name}}
+									<p class="mui-ellipsis">{{item.message}}</p>
+								</div>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+
+		</div>
+
+
+		<script src="../../js/vue.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../js/service/news_list.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+
+</html>

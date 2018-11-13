@@ -1,0 +1,62 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="../../css/mui.css" rel="stylesheet" />
+		<link href="../../css/style.css" rel="stylesheet" />
+		<link href="../../css/myself/feedback.css" rel="stylesheet" />
+	</head>
+
+	<body>
+		
+		<header class="mui-bar mui-bar-nav">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+			<h1 class="mui-title">意见反馈</h1>
+		</header>
+		
+		<div class="mui-content">
+			<div class="mui-input-group mui-card">
+				<span class="feedback">留言内容（必填）</span>
+				<textarea id="edt-feedback" placeholder="请在此输入留言内容，我们会尽快与您联系"></textarea>
+			</div>
+			
+			<div class="mui-input-group mui-card" style="margin-top: 20px;">
+				
+				<ul class="mui-table-view mui-table-view-chevron">
+					<li class="mui-table-view-cell" id="li-feedback">
+						<span class="mui-icon mui-icon-person mui-pull-left">
+							<input id='edt-name' type="text" class="mui-input feedback" placeholder="姓名">
+						</span>
+					</li>
+					<li class="mui-table-view-cell" id="li-phone">
+						<span class="mui-icon mui-icon-phone mui-pull-left">
+							<input id='edt-phone' type="text" class="mui-input feedback" placeholder="电话（必填）">
+						</span>
+					</li>
+					<li class="mui-table-view-cell" id="li-about-us">
+						<span class="mui-icon mui-icon-email mui-pull-left">
+							<input id='edt-mail' type="text" class="mui-input feedback" placeholder="邮箱">
+						</span>
+					</li>
+					<li class="mui-table-view-cell" id="li-about-us">
+						<span class="mui-icon mui-icon-location mui-pull-left">
+							<input id='edt-address' type="text" class="mui-input feedback" placeholder="地址">
+						</span>
+					</li>
+				</ul>
+			</div>
+			
+			<div class="feedback">
+				<!-- 提交按钮 -->
+				<button class="mui-btn mui-btn-block mui-btn-red btn-submit" id="btn-submit">提交</button>
+			</div>
+		</div>
+		
+		<script src="../../js/mui.js"></script>
+		<script src="../../js/myself/feedback.js"></script>
+	</body>
+
+</html>

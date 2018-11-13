@@ -1,0 +1,10 @@
+/* 共通样式 */
+/* 提交按钮样式 */
+button.mui-btn.btn-submit {
+	padding: 8px 0;
+}
+
+/* 提交按钮样式布局样式 */
+div.submit {
+	margin: 20px 10px;
+}
