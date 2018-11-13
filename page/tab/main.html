@@ -6,11 +6,96 @@
 		<title></title>
 		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
 		<link href="../../css/mui.css" rel="stylesheet" />
-		<link href="../../css/tab/main.css" rel="stylesheet" />
+		<script src="../../js/rem.js" type="text/javascript" charset="utf-8"></script>
 	</head>
+	<style>
+
+		html,body{
+			background: #fff;
+		}
+
+		.circleWraper{
+			
+			padding: 10px;
+			display: flex;
+			justify-content: space-around;
+			align-items: center;
+			border-bottom: 1px solid #8f8f94;
+		}
+		.circle{
+			width: 80px;
+			height: 80px;
+			text-align: center;
+			line-height: 80px;
+			border: 1px solid #333;
+			border-radius: 50%;
+			
+		}
+		.left{
+			border-right: 1px solid #8f8f94;
+			text-align: center;
+			height: 40px;
+			width: 100px;
+		}
+		.left p{
+			margin-bottom: 0;
+		}
+		.mui-content{
+			background: #fff;
+		}
+		.messageWrap,.activeClass{
+			display: flex;
+			justify-content: space-around;
+			align-items: center;
+			border-bottom: 1px solid #8f8f94;
+		}
+		.activeChild{
+			text-align: center;
+			padding: 10px;
+			
+		}
+		.activeChild p{
+			margin-bottom: 0;
+		}
+		.messageWrap ul{
+			margin-right: 180px;
+		}
+		.mui-row  li{
+			list-style: none;
+		}
+			
+		.trip{
+			width: 2px;
+			height: 51px;
+			background: #8f8f94;
+			position: relative;
+			top: 11px;
+		}
+		.trip2{
+			width: 2px;
+			height: 51px;
+			background: #8f8f94;
+			position: relative;
+			top: 1px;
+		}
+		.titleText{
+			height: 40px;
+			line-height: 40px;
+			border-bottom: 1px solid #8f8f94;
+			text-align: center;
+		}
+		.footerText{
+			display: flex;
+			justify-content: space-between;
+		}
+		.footerWrap{
+			padding: 10px;
+		}
+	</style>
 
 	<body>
 		<script src="../../js/mui.js"></script>
+
 
 		<div class="mui-content" id="tabMainDom">
 			<div class="mui-input-row mui-search">
@@ -171,8 +256,6 @@
 
 			<div class="newActive">
 				<div style="text-align: center;height: 40px;line-height: 40px;">
-
-
 					最新活动
 				</div>
 				<div class="mui-card" v-for="item in homenavList">
@@ -192,16 +275,12 @@
 					</div>
 
 				</div>
-
-
-				<div style="text-align: center;height: 50px;line-height: 50px;">
-
-
+				<div style="text-align: center;height: 50px;line-height: 50px;" @tap='enterTotal'>
 					更多活动
 				</div>
 			</div>
 			<script src="../../js/vue.min.js" type="text/javascript" charset="utf-8"></script>
-			<script src="../../js/tabMain.js" type="text/javascript" charset="utf-8"></script>
+			<script src="../../js/tab/main.js" type="text/javascript" charset="utf-8"></script>
 
 	</body>
 

@@ -12,8 +12,8 @@ mui.plusReady(function() {
 
 	document.getElementById('enterNavDetail').addEventListener('tap', function() {
 		mui.openWindow({
-			url: "../service/news_list.html",
-			id: "news_list",
+			url: "../navPages/navList.html",
+			id: "../navPages/navList.html",
 			style: {},
 			show: {
 				autoShow: true,
@@ -63,8 +63,8 @@ var homeNavDom = new Vue({
 function enterDetail() {
 
 	mui.openWindow({
-		url: "../service/news_detail.html",
-		id: "news_detail",
+		url: "../navPages/navDetail.html",
+		id: "../navPages/navDetail.html",
 		style: {
 			titleNView:{
 				titleText:'标题栏',

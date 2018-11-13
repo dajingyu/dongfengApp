@@ -1,8 +1,8 @@
 mui.init()
 
-var tabMainDom = new Vue({
+var totalActiveDom = new Vue({
 
-	el: "#tabMainDom",
+	el: "#totalActiveDom",
 	data: {
 		homenavList: [{
 				img: '../../images/car/car-01.jpg',
@@ -28,30 +28,25 @@ var tabMainDom = new Vue({
 		]
 	},
 	methods:{
-		
+		enterActiveDetail(){
+			mui.openWindow({
+				url: "./activeDetail.html",
+				id: "../main/activeDetail.html",
+				style: {
+				
+				},
+				show: {
+					autoShow: true,
+					aniShow: "slide-in-right",
+					duration: 100
+				},
+				waiting: {
+					autoShow: true,
+					title: "正在加載...",
+				}
+			})
+		}
 	}
 
 
 })
-function enterTotal () {
-	
-		mui.openWindow({
-			url: "../main/totalActive.html",
-			id: "../main/totalActive.html",
-			style: {
-			
-			},
-			show: {
-				autoShow: true,
-				aniShow: "slide-in-right",
-				duration: 100
-			},
-			waiting: {
-				autoShow: true,
-				title: "正在加載...",
-			}
-		})
-	}
-	
-
-
