@@ -12,8 +12,8 @@ mui.plusReady(function() {
 
 	document.getElementById('enterNavDetail').addEventListener('tap', function() {
 		mui.openWindow({
-			url: "../service/navList.html",
-			id: "../service/navList.html",
+			url: "../service/news_list.html",
+			id: "news_list",
 			style: {},
 			show: {
 				autoShow: true,
