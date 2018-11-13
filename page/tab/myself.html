@@ -12,15 +12,16 @@
 	<body class="mui-page">
 		<script src="../../js/mui.js"></script>
 		<script src="../../js/tab/myself.js"></script>
-		
+
 		<!-- 标题栏 -->
 		<div class="mui-navbar-inner mui-bar mui-bar-nav">
 			<h1 class="mui-center mui-title">我的</h1>
 		</div>
 		<!-- 内容 -->
 		<div class="mui-content">
-			<ul class="mui-table-view mui-table-view-chevron">
-				<li class="mui-table-view-cell mui-media" id="li-login">
+			<!-- 未登录信息 -->
+			<ul class="mui-table-view mui-table-view-chevron" id="ul-no-login">
+				<li class="mui-table-view-cell mui-media">
 					<img class="mui-media-object mui-pull-left head-img" id="head-img" src="../../images/default.jpeg">
 					<div class="mui-media-body">
 						登录/注册
@@ -28,14 +29,31 @@
 					</div>
 				</li>
 			</ul>
-			
+
+			<!-- 登录后信息 -->
+			<ul class="mui-table-view mui-table-view-chevron mui-hidden" id="ul-login">
+				<li class="mui-table-view-cell mui-media">
+					<!-- 头像显示区域 -->
+					<img class="mui-media-object mui-pull-left head-img" id="img-user">
+					<div class="mui-media-body">
+						<!-- 用户名显示区域 -->
+						<span id="txt-user-name"></span>
+						<p>
+							<button class="mui-btn mui-btn-outlined" id="btn-indentity">身份绑定</button>
+							<button class="mui-btn mui-btn-outlined" id="btn-credentials">资质待完善</button>
+						</p>
+					</div>
+					<button id="btn-personal-info" class="mui-btn mui-btn-outlined">个人信息</button>
+				</li>
+			</ul>
+
 			<ul class="mui-table-view mui-table-view-chevron">
 				<li class="mui-table-view-cell" id="li-my-loan">
 					<span class="mui-icon mui-icon-paperplane mui-pull-left"><span>我的贷款</span></span>
 					<span href="" class="mui-navigate-right"></span>
 				</li>
 			</ul>
-			
+
 			<ul class="mui-table-view">
 				<li class="mui-table-view-cell" id="li-feedback">
 					<span class="mui-icon mui-icon-chat mui-pull-left"><span>意见反馈</span></span>
@@ -50,7 +68,7 @@
 					<span href="" class="mui-navigate-right"></span>
 				</li>
 			</ul>
-			
+
 			<ul class="mui-table-view mui-table-view-chevron">
 				<li class="mui-table-view-cell" id="li-setting">
 					<span class="mui-icon mui-icon-gear mui-pull-left"><span>设置</span></span>

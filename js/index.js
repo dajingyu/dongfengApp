@@ -31,9 +31,21 @@ mui.plusReady(function() {
 
 	if (hasGuide) {
 		//有值，说明已经显示过了，无需显示
-		//关闭启动页
-		plus.navigator.closeSplashscreen();
-		plus.navigator.setFullscreen(false);
+		
+		// 进入广告页
+		mui.openWindow({
+			id: 'advertisement',
+			url: 'advertisement.html',
+			styles: {
+				popGesture: "none"
+			},
+			show: {
+				aniShow: 'none'
+			},
+			waiting: {
+				autoShow: false
+			}
+		});
 	} else {
 
 		// 进入引导页

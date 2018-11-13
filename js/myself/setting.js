@@ -6,7 +6,12 @@ mui.plusReady(function () {
 
 // 退出登录按钮添加点击监听
 document.getElementById("btn-logout").addEventListener('tap', function(e) {
-	mui.back();
+	
+	
+	var myself = plus.webview.getWebviewById('page/tab/myself.html');
+	mui.fire(myself,'logoutsuccess');
+	
+	mui.back()
 });
 
 // 修改密码按钮添加点击监听
