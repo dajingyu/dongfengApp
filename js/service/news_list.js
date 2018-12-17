@@ -5,7 +5,7 @@ mui.init({
 			callback: downFresh
 		},
 		up: {
-			height: 5099,
+			height: 50992333,
 			contentrefresh: "你想看啥...",
 			contentnomore: '没有更多数据了',
 			callback: pullup_fresh
